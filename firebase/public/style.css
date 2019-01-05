@@ -1,0 +1,88 @@
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #000000;
+	font-size: 1.4em;
+	font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", Arial, "メイリオ", Meiryo;
+}
+
+#wrap {
+	max-width: 1000px;
+	min-width: 568px;
+	background-color: #00f;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+header {
+	background-color: #fff;
+	margin: 0;
+	padding: 20px 20px 10px 20px;
+}
+
+#contents {
+	height: auto;
+	background-color: #ff0000;
+	padding: 20px;
+}
+
+#titleimg {
+	width: 100%;
+	min-width: 568px;
+}
+
+#copyright {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.box {
+	width: auto;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.headline img {
+	height: 80px;
+}
+
+.headline p {
+	margin: 0;
+}
+
+.works {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.icon {
+	margin: 0;
+	padding: 0;
+}
+
+#about {
+	text-align: center;
+	background-color: #EEEEEE;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#about th {
+	padding: 10px;
+	vertical-align: top;
+	text-align-last: justify;
+	width: 25%;
+}
+
+#about td {
+	padding: 10px;
+	vertical-align: top;
+	text-align: left;
+}

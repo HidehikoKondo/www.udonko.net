@@ -1,211 +1,162 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
-        <meta name="description" content="UDONKONETのWEBサイトです。名古屋でiOSアプリ・ゲーム開発、WEB制作をしています。">
-        <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
-        <title>UDONKONET</title>
-        <link rel="shortcut icon" href="images/favicon.png">
-		<link rel="stylesheet" href="styles.css">
 
-        <!--Google Analytics-->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
+    <meta name="description" content="UDONKONETのWEBサイトです。名古屋でiOSアプリ・ゲーム開発、WEB制作をしています。">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
+    <title>UDONKONET</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 
-            ga('create', 'UA-89357320-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!--メール送信-->
-        <script>
-	        function sendmail(){
-				var address, subject, body;
-		        address = 'c'+'o'+'n'+'t'+'a'+'c'+'t'+'@'+'u'+'d'+'o'+'n'+'k'+'o'+'.'+'n'+'e'+'t';
-		        subject = 'UDONKONETウェブサイトからのお問い合わせ';
-		        body = '';
-				location.href = 'mailto:' + address + '?subject=' + subject + '&body=' + body;
-	        }
-	    </script>
-        <style>
-	        body {
-		        background-color: #000000;
-		        margin: 0;
-		        padding: 0;
-		        text-align: center;
-		        color: #000000;
-				font-size: 1.4em;
-				font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO", Arial, "メイリオ", Meiryo;
-	        }
-			#wrap {
-				max-width: 1000px;
-				min-width: 568px;
-				background-color: #00f;
-				margin-left: auto;
-				margin-right: auto;
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-			header {
-				background-color: #fff;
-				margin: 0;
-				padding: 20px 20px 10px 20px;
-			}
-			#contents{
-				height: auto;
-				background-color: #ff0000;
-				padding: 20px;
-			}
+    <!--Google Analytics-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-			#titleimg {
-				width:100%;
-				min-width: 568px;
-			}
-			#copyright {
-				color: #fff;
-				margin-bottom: 20px;
-			}
-			.box {
-				width: auto;
-				background-color: #fff;
-				margin-bottom: 20px;
-				padding: 20px;		
-				text-align: center;	
-			}
-			.headline img{
-				height: 80px;
-			}
-			.headline p{
-				margin: 0;
-			}
-			.works{
-				display: flex;
-				justify-content: space-around;				
-				margin-top: 20px;
-			}
-			.icon {
-				margin: 0;
-				padding: 0;				
-			}
-			#about{
-				text-align: center;
-				background-color: #EEEEEE;
-				width: 100%;
-				margin-top: 20px;
-			}
-			#about th {
-				padding:10px;
-				vertical-align: top;
-				text-align-last: justify;
-				width: 25%;			
-			}
-			#about td {
-				padding:10px;
-				vertical-align: top;
-				text-align: left;
-			}
-	    </style>
-    </head>
-    <body>
-		<div id="wrap">
-			<header>
-				<img id="titleimg" src="images/title.svg" usemap="#ImageMap"  />
-			</header>
-			<div id="contents">
-				<div class="box">
-					<div class="headline">
-						<img class="headline" src="images/headline-mobileapps.svg" />
-						<p>主にiPhoneアプリの開発をやっています</p>
-					</div>
-					<div class="works">
-						<a href="https://itunes.apple.com/jp/app/id1447619262" target="_blank"><img class="icon" src="images/icon-breakout.svg" alt="SpriteKitでブロック崩し" /></a>
-						<a href="https://itunes.apple.com/jp/app/id1314890802" target="_blank"><img class="icon" src="images/icon-uranai.svg" alt="どうぶつ顔占い" /></a>
-						<a href="nigeyonkun.html" target="_blank"><img class="icon" src="images/icon-nigeyonkun.svg" alt="逃げる！目覚まし時計 --にげよんくん--" /></a>
-						<a href="pacmeme.html" target="_blank"><img class="icon" src="images/icon-pacmeme.svg" /></a>
-						<a href="https://itunes.apple.com/jp/app/id845795103" target="_blank"><img class="icon" src="images/icon-tax8.svg" alt="tax8%" /></a>
-					</div>
-					<div class="works">
-							<a href="https://itunes.apple.com/jp/app/id1013469638" target="_blank"><img class="icon" src="images/icon-morphincam.svg" alt="morphinecam" /></a>
-							<a href="https://itunes.apple.com/jp/app/id570377317" target="_blank"><img class="icon" src="images/icon-hageoyaji.svg" alt="ハゲ親父断髪式" /></a>
-							<img class="icon" src="images/icon-blank.svg" />
-							<img class="icon" src="images/icon-blank.svg" />
-							<img class="icon" src="images/icon-blank.svg" />
-					</div>					
-				</div>
-				<div class="box">
-					<div class="headline">
-						<img class="headline" src="images/headline-education.svg" />
-						<p>プログラミング講師・動画教材の制作をしています</p>
-					</div>
-					<div class="works">
-						<a href="http://www.codefriends.jp/" target="_blank"><img class="icon" src="images/icon-codefriends.svg" alt="親子で学べる小学生からのプログラミングスクールCODEFRIENDS" /></a>
-						<a href="https://www.udemy.com/ios12-watchos5-spritekit/" target="_blank"><img class="icon" src="images/icon-udemy.svg" alt="Udemyコース「【iOS12/watchOS5】UIKit・WatchKit・SpriteKitで作るカメラアプリ＆ゲームアプリ 入門編
-							」" /></a>
-						<img class="icon" src="images/icon-blank.svg" />
-						<img class="icon" src="images/icon-blank.svg" />
-						<img class="icon" src="images/icon-blank.svg" />
-					</div>
-				</div>
-				<div class="box">
-					<div class="headline">
-						<img class="headline" src="images/headline-activity.svg" />
-						<p>執筆、ハッカソン出場、メディア出演などの紹介です</p>
-					</div>
-					<div class="works">
-						<a href="http://www.shoeisha.co.jp/book/detail/9784798139517" target="_blank"><img class="icon" src="images/icon-spritekit.svg" alt="SpriteKitではじめる2Dゲームプログラミング Swift対応" /></a>
-						<a href="http://www.jam-house.co.jp/mabeee/index.htm" target="_blank"><img class="icon" src="images/icon-mabeeebook.svg" alt="スマホでおもちゃを動かしちゃおう！MaBeee活用ブック" /></a>
-						<a href="https://www.mabeeematsuri-2017.com" target="_blank"><img class="icon" src="images/icon-mabeeematsuri.svg" alt="MaBeee祭" /></a>
-						<a href="https://spajam.jp" target="_blank"><img class="icon" src="images/icon-spajam.svg" alt="SPAJAM" /></a>
-						<a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i" target="_blank"><img class="icon" src="images/icon-youtube.svg" alt="UDONKONET出演動画" /></a>
-					</div>
-					<div class="works">
-						<a href="http://zip-fm.co.jp/program/peeps/" target="_blank"><img class="icon" src="images/icon-peeps.svg" alt="ZIP-FM PEEPS" /></a>
-						<a href="" target="_blank"><img class="icon" src="images/iconn-lucky.svg" /></a>
-						<a href="https://note.mu/udonkonet" target="_blank"><img class="icon" src="images/icon-note.svg" alt="夢はここから深夜放送ラッキー" /></a>
-						<img class="icon" src="images/icon-blank.svg" />
-						<img class="icon" src="images/icon-blank.svg" />
-					</div>					
-				</div>
-				<div class="box">
-					<div class="headline">
-						<img class="headline" src="images/headline-contact.svg" />
-						<p>お問い合わせは各種SNS・メールでどうぞ</p>
-					</div>
-					<div class="works">
-						<a href="https://www.facebook.com/udonkonet" target="_blank"><img class="icon" src="images/icon-facebook.svg" alt="UDONKONET FACEBOOK" /></a>
-						<a href="https://www.facebook.com/udonkoapps" target="_blank"><img class="icon" src="images/icon-facebookpage.svg" alt="UDONKONET FACEBOOKPAGE"  /></a>
-						<a href="https://twitter.com/UDONKONET" target="_blank"><img class="icon" src="images/icon-twitter.svg" alt="UDONKONET TWITTER"  /></a>
-						<img class="icon" src="images/icon-mail.svg" onclick="sendmail();" />
-						<a href="https://www.youtube.com/user/udonkonet" target="_blank"><img class="icon" src="images/icon-youtube.svg" alt="UDONKONET Youtubeチャンネル" /></a>
-					</div>
-				</div>
-				<div class="box">
-						<div class="headline">
-							<img class="headline" src="images/headline-about.svg" />
-						</div>
-							<table id="about">
-								<tr>
-									<th>屋号</th>
-									<td>UDONKONET（ウドンコネット）</td>
-								</tr>
-								<tr>
-									<th>氏名</th>
-									<td>近藤 秀彦</td>
-								</tr>
-								<tr>
-									<th>活動エリア</th>
-									<td>主に愛知県・岐阜県、たまに東京</td>
-								</tr>	
-								<tr>
-									<th>事業内容</th>
-									<td>プログラミング講師・アプリ開発・WEB制作</td>
-								</tr>								
-							</table>
-					</div>
-				<span id="copyright">&copy; UDONKONET</span>
-			</div>
-		</div>
-	</body>
+        ga('create', 'UA-89357320-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--メール送信-->
+    <script>
+        function sendmail() {
+            var address, subject, body;
+            address = 'c' + 'o' + 'n' + 't' + 'a' + 'c' + 't' + '@' + 'u' + 'd' + 'o' + 'n' + 'k' + 'o' + '.' + 'n' +
+                'e' + 't';
+            subject = 'UDONKONETウェブサイトからのお問い合わせ';
+            body = '';
+            location.href = 'mailto:' + address + '?subject=' + subject + '&body=' + body;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
+        </header>
+        <div id="contents">
+            <div class="box">
+                <div class="headline">
+                    <img class="headline" src="images/headline-mobileapps.svg" />
+                    <p>主にiPhoneアプリの開発をやっています</p>
+                </div>
+                <div class="works">
+                    <a href="https://itunes.apple.com/jp/app/id1447619262" target="_blank"><img class="icon" src="images/icon-breakout.svg"
+                            alt="SpriteKitでブロック崩し" /></a>
+                    <a href="https://itunes.apple.com/jp/app/id1314890802" target="_blank"><img class="icon" src="images/icon-uranai.svg"
+                            alt="どうぶつ顔占い" /></a>
+                    <a href="nigeyonkun.html" target="_blank"><img class="icon" src="images/icon-nigeyonkun.svg" alt="逃げる！目覚まし時計 --にげよんくん--" /></a>
+                    <a href="pacmeme.html" target="_blank"><img class="icon" src="images/icon-pacmeme.svg" /></a>
+                    <a href="https://itunes.apple.com/jp/app/id845795103" target="_blank"><img class="icon" src="images/icon-tax8.svg"
+                            alt="tax8%" /></a>
+                </div>
+                <div class="works">
+                    <a href="https://itunes.apple.com/jp/app/id1013469638" target="_blank"><img class="icon" src="images/icon-morphincam.svg"
+                            alt="morphinecam" /></a>
+                    <a href="https://itunes.apple.com/jp/app/id570377317" target="_blank"><img class="icon" src="images/icon-hageoyaji.svg"
+                            alt="ハゲ親父断髪式" /></a>
+                    <img class="icon" src="images/icon-blank.svg" />
+                    <img class="icon" src="images/icon-blank.svg" />
+                    <img class="icon" src="images/icon-blank.svg" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="headline">
+                    <img class="headline" src="images/headline-education.svg" />
+                    <p>プログラミング講師・動画教材の制作をしています</p>
+                </div>
+                <div class="works">
+                    <a href="http://www.codefriends.jp/" target="_blank"><img class="icon" src="images/icon-codefriends.svg"
+                            alt="親子で学べる小学生からのプログラミングスクールCODEFRIENDS" /></a>
+                    <a href="https://www.udemy.com/ios12-watchos5-spritekit/" target="_blank"><img class="icon" src="images/icon-udemy.svg"
+                            alt="Udemyコース「【iOS12/watchOS5】UIKit・WatchKit・SpriteKitで作るカメラアプリ＆ゲームアプリ 入門編
+                            」" /></a>
+                    <img class="icon" src="images/icon-blank.svg" />
+                    <img class="icon" src="images/icon-blank.svg" />
+                    <img class="icon" src="images/icon-blank.svg" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="headline">
+                    <img class="headline" src="images/headline-activity.svg" />
+                    <p>執筆、ハッカソン出場、メディア出演などの紹介です</p>
+                </div>
+                <div class="works">
+                    <a href="http://www.shoeisha.co.jp/book/detail/9784798139517" target="_blank"><img class="icon" src="images/icon-spritekit.svg"
+                            alt="SpriteKitではじめる2Dゲームプログラミング Swift対応" /></a>
+                    <a href="http://www.jam-house.co.jp/mabeee/index.htm" target="_blank"><img class="icon" src="images/icon-mabeeebook.svg"
+                            alt="スマホでおもちゃを動かしちゃおう！MaBeee活用ブック" /></a>
+                    <a href="https://www.mabeeematsuri-2017.com" target="_blank"><img class="icon" src="images/icon-mabeeematsuri.svg"
+                            alt="MaBeee祭" /></a>
+                    <a href="https://spajam.jp" target="_blank"><img class="icon" src="images/icon-spajam.svg" alt="SPAJAM" /></a>
+                    <a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i" target="_blank"><img
+                            class="icon" src="images/icon-youtube.svg" alt="UDONKONET出演動画" /></a>
+                </div>
+                <div class="works">
+                    <a href="http://zip-fm.co.jp/program/peeps/" target="_blank"><img class="icon" src="images/icon-peeps.svg"
+                            alt="ZIP-FM PEEPS" /></a>
+                    <a href="" target="_blank"><img class="icon" src="images/iconn-lucky.svg" /></a>
+                    <a href="https://note.mu/udonkonet" target="_blank"><img class="icon" src="images/icon-note.svg"
+                            alt="夢はここから深夜放送ラッキー" /></a>
+                    <img class="icon" src="images/icon-blank.svg" />
+                    <img class="icon" src="images/icon-blank.svg" />
+                </div>
+            </div>
+            <div class="box">
+                <div class="headline">
+                    <img class="headline" src="images/headline-contact.svg" />
+                    <p>お問い合わせは各種SNS・メールでどうぞ</p>
+                </div>
+                <div class="works">
+                    <a href="https://www.facebook.com/udonkonet" target="_blank"><img class="icon" src="images/icon-facebook.svg"
+                            alt="UDONKONET FACEBOOK" /></a>
+                    <a href="https://www.facebook.com/udonkoapps" target="_blank"><img class="icon" src="images/icon-facebookpage.svg"
+                            alt="UDONKONET FACEBOOKPAGE" /></a>
+                    <a href="https://twitter.com/UDONKONET" target="_blank"><img class="icon" src="images/icon-twitter.svg"
+                            alt="UDONKONET TWITTER" /></a>
+                    <img class="icon" src="images/icon-mail.svg" onclick="sendmail();" />
+                    <a href="https://www.youtube.com/user/udonkonet" target="_blank"><img class="icon" src="images/icon-youtube.svg"
+                            alt="UDONKONET Youtubeチャンネル" /></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="headline">
+                    <img class="headline" src="images/headline-about.svg" />
+                </div>
+                <table id="about">
+                    <tr>
+                        <th>屋号</th>
+                        <td>UDONKONET（ウドンコネット）</td>
+                    </tr>
+                    <tr>
+                        <th>氏名</th>
+                        <td>近藤 秀彦</td>
+                    </tr>
+                    <tr>
+                        <th>活動エリア</th>
+                        <td>主に愛知県・岐阜県、たまに東京</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>プログラミング講師・アプリ開発・WEB制作</td>
+                    </tr>
+                </table>
+            </div>
+            <span id="copyright">&copy; UDONKONET</span>
+        </div>
+    </div>
+</body>
+
 </html>
