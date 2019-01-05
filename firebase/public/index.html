@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="keywords" content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング,インストラクター,講師">
+        <meta name="keywords" content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
         <meta name="description" content="UDONKONETのWEBサイトです。名古屋でiOSアプリ・ゲーム開発、WEB制作をしています。">
         <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5">
         <title>UDONKONET</title>
         <link rel="shortcut icon" href="images/favicon.png">
-<!--         <link rel="stylesheet" href="styles.css"> -->
+		<link rel="stylesheet" href="styles.css">
 
         <!--Google Analytics-->
         <script>
@@ -27,8 +27,6 @@
 		        subject = 'UDONKONETウェブサイトからのお問い合わせ';
 		        body = '';
 				location.href = 'mailto:' + address + '?subject=' + subject + '&body=' + body;
-
-				console.log("メール");
 	        }
 	    </script>
         <style>
@@ -39,6 +37,7 @@
 		        text-align: center;
 		        color: #000000;
 				font-size: 1.4em;
+				font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO", Arial, "メイリオ", Meiryo;
 	        }
 			#wrap {
 				max-width: 1000px;
@@ -55,7 +54,7 @@
 				padding: 20px 20px 10px 20px;
 			}
 			#contents{
-				height: 100%;
+				height: auto;
 				background-color: #ff0000;
 				padding: 20px;
 			}
@@ -69,11 +68,10 @@
 				margin-bottom: 20px;
 			}
 			.box {
-				width: 100%;
+				width: auto;
 				background-color: #fff;
 				margin-bottom: 20px;
-				padding-top: 20px;
-				padding-bottom: 20px;		
+				padding: 20px;		
 				text-align: center;	
 			}
 			.headline img{
@@ -82,7 +80,6 @@
 			.headline p{
 				margin: 0;
 			}
-
 			.works{
 				display: flex;
 				justify-content: space-around;				
@@ -92,14 +89,11 @@
 				margin: 0;
 				padding: 0;				
 			}
-
 			#about{
 				text-align: center;
 				background-color: #EEEEEE;
-				margin-left: 20px;
-				margin-right: 20px;
 				width: 100%;
-				max-width: 800px;
+				margin-top: 20px;
 			}
 			#about th {
 				padding:10px;
@@ -112,7 +106,6 @@
 				vertical-align: top;
 				text-align: left;
 			}
-			
 	    </style>
     </head>
     <body>
@@ -192,7 +185,6 @@
 						<div class="headline">
 							<img class="headline" src="images/headline-about.svg" />
 						</div>
-						<div class="works">
 							<table id="about">
 								<tr>
 									<th>屋号</th>
@@ -211,7 +203,6 @@
 									<td>プログラミング講師・アプリ開発・WEB制作</td>
 								</tr>								
 							</table>
-						</div>
 					</div>
 				<span id="copyright">&copy; UDONKONET</span>
 			</div>
