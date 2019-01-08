@@ -9,9 +9,8 @@ body {
 }
 
 #wrap {
-    max-width: 800px;
+    max-width: 1000px;
     min-width: 568px;
-    background-color: #00f;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
