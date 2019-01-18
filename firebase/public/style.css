@@ -61,6 +61,20 @@ header {
     margin-top: 20px;
 }
 
+.privacy{
+    background-color: #EEEEEE;
+    text-align: left;
+    padding: 20px;
+    font-size: 0.7em;
+    margin-top: 20px;
+    height: 300px;
+    overflow: scroll;
+}
+.privacy h1{
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
 .icon {
     margin: 0;
     padding: 0;
