@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <meta property="og:title" content="THE RENSHA - Master of SUIKA-WARI -" />
-        <meta property="og:site_name" content="THE RENSHA - Master of SUIKA-WARI -" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="ひたすらスイカをタップして破壊しろ！！" />
-        <meta property=" og:url" content="https://sounds.udonko.net" />
-        <meta property="og:image" content="https://www.udonko.net/rensha/images/ogp-rensha.png" />
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-            ga('create', 'UA-89357320-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
+    <meta property="og:title" content="THE RENSHA - Master of SUIKA-WARI -" />
+    <meta property="og:site_name" content="THE RENSHA - Master of SUIKA-WARI -" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="ひたすらスイカをタップして破壊しろ！！" />
+    <meta property="og:url" content="https://www.udonko.net/rensha/index.html" />
+    <meta property="og:image" content="https://www.udonko.net/rensha/images/ogp-rensha.png" />
+
+
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="THE RENSHA - Master of SUIKA-WARI -">
+    <meta name="twitter:player" content="https://www.udonko.net/rensha/game.html">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:player:width" content="360">
+    <meta name="twitter:image" content="https://www.udonko.net/rensha/images/ogp-rensha.png">
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89357320-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #frame {
+            border: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var size = 0;
+            if (w > h) {
+                size = h;
+            } else {
+                size = w;
             }
+            $("#frame").width(size);
+            $("#frame").height(size);
 
-            #frame {
-                border: none;
-            }
-        </style>
-        <script>
-            $(document).ready(function () {
-                var w = window.innerWidth;
-                var h = window.innerHeight;
-                var size = 0;
-                if (w > h) {
-                    size = h;
-                } else {
-                    size = w;
-                }
-                $("#frame").width(size);
-                $("#frame").height(size);
+        });
+    </script>
+</head>
 
-            });
-        </script>
-    </head>
+<body>
 
-    <body>
-
-        <iframe src="game.html" id="frame"></iframe>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- THE RENSHA -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3324877759270339"
-            data-ad-slot="5062538071" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </body>
+    <iframe src="game.html" id="frame"></iframe>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- THE RENSHA -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3324877759270339" data-ad-slot="5062538071"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
 
 </html>
