@@ -20,21 +20,34 @@
     <link rel="stylesheet" href="style.css">
 
     <script type="text/javascript" src="script.js"></script>
-
-    <!--Firebase設定--->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.5.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
 </head>
 
 <body>
+    <!--Firebase設定--->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCUewJtKXDW4HK9V-i79AzYxR7IG8zgLTU",
+            authDomain: "udonkonet-4deef.firebaseapp.com",
+            databaseURL: "https://udonkonet-4deef.firebaseio.com",
+            projectId: "udonkonet-4deef",
+            storageBucket: "udonkonet-4deef.appspot.com",
+            messagingSenderId: "824449143952",
+            appId: "1:824449143952:web:c943e28228e6b9e0c1f415",
+            measurementId: "G-LG9S2Z88V8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
     <div id="wrap">
         <header>
             <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
