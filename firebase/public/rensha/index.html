@@ -2,6 +2,12 @@
 <html>
 
 <head>
+    <!-- android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -61,6 +67,12 @@
 
         });
     </script>
+
+    <!--PWA-->
+    <link rel="manifest" href="/manifest.json">
+    <script src="/app.js"></script>
+    <script src="/sw.js"></script>
+
 </head>
 
 <body>
