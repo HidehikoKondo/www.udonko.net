@@ -1,23 +1,25 @@
 {
-    "name": "The Rapid Fire Master", //ここをサイト名に
-    "short_name": "MEIJIN", //ここをサイト名に
-    "theme_color": "#333333", //好きなカラーコードを設定
-    "background_color": "#ffffff", //好きなカラーコードを設定
-    "display": "standalone", //いじる必要なし
-    "scope": "/", //いじる必要なし
-    "start_url": "https://www.udonko.net/rensha/", //サイト名
+    "name": "THE RENSHA =Master of SUIKA-WARI=",
+    "short_name": "THE RENSHA",
     "icons": [
         {
-            "src": "images/watermelon.png", //下記サイズの画像ファイルのパスを記載
-            "sizes": "192x192", //必要な画像サイズ
-            "type": "image/png" //いじる必要なし
+            "src": "images/icon256.png",
+            "sizes": "256x256",
+            "type": "image/png"
         },
         {
-            "src": "images/watermelon.png",
+            "src": "images/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "start_url": "/index.html",
-    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#ffffff"
 }

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
+    <title>THE RENSHA =Master of SUIKA-WARI=</title>
+    <meta name="description" content="16連射でスイカ割">
+    <meta name="Keywords" content="カジュアルゲーム,インディーズゲーム,漫画,マンガ,アニメ" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
     <!-- android -->
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -14,16 +20,16 @@
     <meta property="og:title" content="THE RENSHA - Master of SUIKA-WARI -" />
     <meta property="og:site_name" content="THE RENSHA - Master of SUIKA-WARI -" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="ひたすらスイカをタップして破壊しろ！！" />
+    <meta property="og:description" content="クリックしてプレイ！" />
     <meta property="og:url" content="https://www.udonko.net/rensha/index.html" />
     <meta property="og:image" content="https://www.udonko.net/rensha/images/ogp-rensha.png" />
 
-
+    <!--Twitter Card-->
     <meta name="twitter:card" content="player">
     <meta name="twitter:title" content="THE RENSHA - Master of SUIKA-WARI -">
     <meta name="twitter:player" content="https://www.udonko.net/rensha/game.html">
-    <meta name="twitter:player:height" content="360">
-    <meta name="twitter:player:width" content="360">
+    <meta name="twitter:player:height" content="320">
+    <meta name="twitter:player:width" content="480">
     <meta name="twitter:image" content="https://www.udonko.net/rensha/images/ogp-rensha.png">
 
     <script>
@@ -68,10 +74,16 @@
         });
     </script>
 
-    <!--PWA-->
-    <link rel="manifest" href="/manifest.json">
-    <script src="/app.js"></script>
-    <script src="/sw.js"></script>
+    <!--Service Worker-->
+    <!-- Service Worker -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+        window.addEventListener('load', function () {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register("sw.js");
+            }
+        });
+    </script>
 
 </head>
 
