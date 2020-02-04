@@ -19,7 +19,7 @@
         }
     ],
     "orientation": "portrait",
-    "start_url": "/",
+    "start_url": "/rensha/",
     "display": "fullscreen",
     "theme_color": "#ffffff"
 }
