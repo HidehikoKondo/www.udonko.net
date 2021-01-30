@@ -1,15 +1,2 @@
 tasks:
-  - init: 
-      echo "Installing Firebase tools..."
-      npm install -g firebase-tools
-      cd /workspace/my_project/functions
-      echo "Getting dependencies..."
-      npm install
-
-    command: 
-      cd /workspace/my_project/functions
-      echo "Make sure we are using the latest versions of Firebase tools and libraries..."
-      npm install firebase-functions@latest firebase-admin@latest --save
-      npm install -g firebase-tools
-      echo "Logging in..."
-      firebase login:ci --no-localhost
+  - before: npm i -g firebase-tool
