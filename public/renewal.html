@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>UDONKONET（ウドンコネット）</title>
+    <meta charset="utf-8">
+    <meta name="keywords"
+        content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
+    <meta name="description" content="UDONKONETは名古屋でプログラミング講師・動画教材・モバイルアプリ開発をやってます">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="renewal.css">
+
+    <!--OGP-->
+    <meta property="og:title" content="UDONKONET（ウドンコネット）" />
+    <meta property="og:site_name" content="UDONKONET（ウドンコネット）" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="名古屋でプログラミング講師・動画教材制作・アプリ開発をやってます" />
+    <meta property="og:url" content="https://www.udonko.net" />
+    <meta property="og:image" content="https://www.udonko.net/images/ogp.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c541a8adc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Firebase設定--->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCUewJtKXDW4HK9V-i79AzYxR7IG8zgLTU",
+            authDomain: "udonkonet-4deef.firebaseapp.com",
+            databaseURL: "https://udonkonet-4deef.firebaseio.com",
+            projectId: "udonkonet-4deef",
+            storageBucket: "udonkonet-4deef.appspot.com",
+            messagingSenderId: "824449143952",
+            appId: "1:824449143952:web:c943e28228e6b9e0c1f415",
+            measurementId: "G-LG9S2Z88V8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <div id="wrap">
+        <header>
+            <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
+        </header>
+        <div id="contents">
+            <h1>Programming Education</h1>
+            <a href="https://www.yahoo.co.jp"><i class="fab fa-twitter"></i></a>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-envelope"></i>
+            <i class="far fa-handshake"></i>
+
+        </div>
+    </div>
+</body>
+
+</html>
