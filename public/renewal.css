@@ -30,7 +30,25 @@ p {
     margin: 0;
 }
 
+#education {
+    animation: fadeIn 1s ease 0.3s 1 normal;
+}
+@keyframes fadeIn {
+    /*animetion-nameで設定した値を書く*/
+
+    0% {
+        opacity: 0;
+    } /*アニメーション開始時は不透明度0%*/
+
+    100% {
+        opacity: 1;
+    } /*アニメーション終了時は不透明度100%*/
+}
+
 i {
+    text-align: center;
+    width: 50px;
+    height: 50px;
     font-size: 44px;
     margin: 20px 20px 20px 0;
 }
