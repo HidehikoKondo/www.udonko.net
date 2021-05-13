@@ -19,8 +19,8 @@ h1 {
     border-bottom-color: #000000;
     border-bottom-style: solid;
     font-size: 2em;
-    margin: 40px 0 0 0;
-    letter-spacing: 2px;
+    margin: 40px 0 5px 0;
+    letter-spacing: 1px;
 }
 
 h1:first-letter {
@@ -48,9 +48,9 @@ p {
 
 i {
     text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 44px;
+    width: 44px;
+    height: 44px;
+    font-size: 40px;
     margin: 20px 20px 20px 0;
 }
 
@@ -86,7 +86,8 @@ li {
 .about {
     background-color: #eeeeee;
     text-align: left;
-    padding: 20px;
+    line-height: 3em;
+    padding: 5px 20px 5px 20px;
     font-size: 1em;
     margin-top: 20px;
 }
