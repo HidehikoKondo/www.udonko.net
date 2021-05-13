@@ -1,112 +1,94 @@
 body {
-    background-color: #000000;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     color: #000000;
-    font-size: 1.4em;
-
-    font-family: "Yusei Magic", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Anton", sans-serif;
-}
-
-i {
-    font-size: 50px;
-}
-
-#wrap {
-    max-width: 1000px;
-    min-width: 568px;
+    font-size: 1em;
+    font-family: "Noto Sans JP", sans-serif;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-header {
-    background-color: #fff;
-    margin: 0;
-    padding: 20px 20px 10px 20px;
+h1 {
+    font-family: "Anton", sans-serif;
+    border-bottom-width: 2px;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+    font-size: 2em;
+    margin: 40px 0 0 0;
 }
 
-#contents {
-    height: auto;
-    background-color: #ff0000;
-    padding: 20px;
+h1:first-letter {
+    color: #f00;
+}
+
+p {
+    margin: 0;
+}
+
+i {
+    font-size: 44px;
+    margin: 20px 20px 20px 0;
+}
+
+header {
+    margin: 20px;
+}
+
+article {
+    margin: 20px;
 }
 
 #titleimg {
     width: 100%;
-    min-width: 568px;
 }
 
-#copyright {
-    color: #fff;
-    margin-bottom: 20px;
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #000000;
+}
+a:hover {
+    color: #f00;
+}
+a:active {
+    color: #000000;
 }
 
-.box {
-    width: auto;
-    background-color: #fff;
-    margin-bottom: 20px;
+li {
+    list-style-type: none;
+}
+
+.about {
+    background-color: #eeeeee;
+    text-align: left;
     padding: 20px;
-    text-align: center;
-}
-
-.headline img {
-    height: 80px;
-}
-
-.headline p {
-    margin: 0;
-}
-
-.works {
-    display: flex;
-    justify-content: space-around;
+    font-size: 1em;
     margin-top: 20px;
 }
 
 .privacy {
     background-color: #eeeeee;
     text-align: left;
-    padding: 20px;
-    font-size: 0.7em;
+    padding: 0px 20px 20px 20px;
+    font-size: 0.8em;
     margin-top: 20px;
     height: 300px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
-.privacy h1 {
-    font-size: 1em;
+.privacy h2 {
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.icon {
-    margin: 0;
-    padding: 0;
-}
-
-#about {
+footer {
     text-align: center;
-    background-color: #eeeeee;
-    width: 100%;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#about th {
-    padding: 10px;
-    vertical-align: top;
-    width: 25%;
-}
-
-#about td {
-    padding: 10px;
-    vertical-align: top;
-    text-align: left;
-}
+/* ↑renewal */

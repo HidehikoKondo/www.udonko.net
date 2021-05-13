@@ -4,6 +4,8 @@
 <head>
     <title>UDONKONET（ウドンコネット）</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta name="keywords"
         content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
     <meta name="description" content="UDONKONETは名古屋でプログラミング講師・動画教材・モバイルアプリ開発をやってます">
@@ -20,8 +22,46 @@
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c541a8adc.js" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script>
+        var headline = [
+            "プログラミング教育業務やってます",
+            "WEBアプリ、スマホアプリを開発しています",
+            "受賞歴やメディア出演など",
+            "お問い合わせはこちら",
+        ];
+
+        var mouseover = [
+            "プログラミング教室で講師やってます",
+            "プログラミング教育のコンテンツの配信をやってます",
+            "UdemyでiOSアプリ開発動画を配信してます",
+            "ゲーム効果音の配信サイト -8bitSounds-",
+            "iOS開発入門本の執筆",
+            "Mabeee対応アプリの掲載",
+            "GitHubで公開してます",
+            "Androidアプリを公開してます",
+            "iOSアプリを公開してます",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ]
+
+        function changeMessage(element, message) {
+            console.log(element);
+            element.parentNode.childNodes[3].innerHTML = message;
+        }
+
+    </script>
 </head>
 
 <body>
@@ -49,20 +89,109 @@
         firebase.analytics();
     </script>
 
-    <div id="wrap">
-        <header>
-            <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
-        </header>
-        <div id="contents">
+    <header>
+        <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
+    </header>
+    <article>
+        <section>
             <h1>Programming Education</h1>
-            <a href="https://www.yahoo.co.jp"><i class="fab fa-twitter"></i></a>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="far fa-envelope"></i>
-            <i class="far fa-handshake"></i>
+            <p id="education">プログラミング教育業務やってます</p>
+            <a href="http://www.codefriends.jp/" onmouseover="changeMessage(this, mouseover[0]);"
+                onmouseout="changeMessage(this , headline[0])">
+                <i class="fas fa-chalkboard-teacher"></i></a>
+            <a href="https://www.youtube.com/channel/UCnR9CDKi67LjKccrin7S53w/featured"
+                onmouseover="changeMessage(this, mouseover[1]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.udemy.com/course/ios12-watchos5-spritekit/"
+                onmouseover="changeMessage(this, mouseover[2]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fas fa-video"></i></a>
+            <a href="https://www.shoeisha.co.jp/book/detail/9784798139517"
+                onmouseover="changeMessage(this, mouseover[4]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fas fa-book"></i></a>
+            <a href="https://www.jam-house.co.jp/mabeee/index.htm" onmouseover="changeMessage(this, mouseover[5]);"
+                onmouseout="changeMessage(this , headline[0])"><i class="fas fa-book"></i></a>
+        </section>
 
-        </div>
-    </div>
+        <section>
+            <h1>Developement</h1>
+            <p>WEBアプリ、スマホアプリを開発しています</p>
+            <a href="https://github.com/HidehikoKondo" onmouseover="changeMessage(this, mouseover[6]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fab fa-github"></i></a>
+            <a href="https://play.google.com/store/apps/developer?id=UDONKONET
+" onmouseover="changeMessage(this, mouseover[7]);" onmouseout="changeMessage(this , headline[1])"><i
+                    class="fab fa-google-play"></i></a>
+
+            <a href="https://apps.apple.com/jp/developer/hidehiko-kondo/id436143446?ign-mpt=uo%3D4
+" onmouseover="changeMessage(this, mouseover[8]);" onmouseout="changeMessage(this , headline[1])"><i
+                    class="fab fa-app-store"></i></a>
+            <a href="https://sounds.udonko.net/" onmouseover="changeMessage(this, mouseover[3]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fas fa-gamepad"></i></a>
+            <h1>Activity</h1>
+            <p id="activity">受賞歴やメディア出演など</p>
+            <a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://note.com/tapioca24/n/nd0eb37a1ba83"><i class="far fa-file"></i></a>
+            <a href="https://www.aba-net.com/lucky/"><i class="fas fa-tv"></i></a>
+            <a href="https://zip-fm.co.jp/program/peeps/"><i class="fas fa-microphone-alt"></i></a>
+            <a href="https://spajam.jp/2016/final/team/"><i class="fas fa-trophy"></i></a>
+            <a href="http://www.mabeeematsuri-2017.com/"><i class="fas fa-trophy"></i></a>
+        </section>
+        <section>
+            <h1>About</h1>
+            <p>UDONKONETについて</p>
+            <div class="about">
+                <li><b>屋号：</b>UDONKONET（ウドンコネット）</li>
+                <li><b>氏名：</b>近藤 秀彦</li>
+                <li><b>エリア：</b>愛知県</li>
+                <li><b>事業：</b>プログラミング講師　アプリ開発</li>
+            </div>
+        </section>
+        <section>
+            <h1>Contact</h1>
+            <p>お問い合わせはこちら</p>
+            <a href="https://twitter.com/UDONKONET"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/udonkonet/"><i class="fab fa-facebook"></i></a>
+            <a href="https://forms.gle/5GNntSV6HeuFVPUg8"><i class="far fa-envelope"></i></a>
+            <a href="https://www.wantedly.com/id/hidehiko_kondo"><i class="far fa-handshake"></i></a>
+        </section>
+        <section>
+            <h1>Privacy Policy</h1>
+            <p>プライバシーポリシーです</p>
+            <div class="privacy">
+                <h2>個人情報の利用目的</h2>
+                当サイト・アプリでは、メールでのお問い合わせなどの際に、名前、メールアドレス等の個人情報をご登録いただく場合がございます。
+                これらの個人情報はお問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
+                <h2>個人情報の第三者への開示</h2>
+                当サイト・アプリでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。<br />
+                ・本人のご了解がある場合<br />
+                ・法令等への協力のため、開示が必要となる場合<br />
+                <h2>個人情報の開示、訂正、追加、削除、利用停止</h2>
+                ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
+                <h2>クッキー（Cookie）</h2>
+                当サイト・アプリでは、一部のコンテンツについてCookie（クッキー）を利用しています。
+                Cookieとは、サイトにアクセスした際にブラウザに保存される情報ですが、お名前やメールアドレス等の個人情報は含まれません。
+                当サイト・アプリにアクセスいただいた方々に効果的な広告を配信するためやアクセス解析にCookieの情報を利用させていただく場合があります。
+                ブラウザの設定により、Cookieを使用しないようにすることも可能です。
+                当サイト・アプリで利用しているアクセス解析、広告サービスは以下のとおりです。<br />
+                ・Google Analytics<br />
+                ・Admob<br />
+                ・Firebase
+                <h2>第三者配信の広告サービスとCookie</h2>
+                当サイト・アプリでは、第三者配信の広告サービスである「Admob」を利用し、第三者配信事業者や広告ネットワークの配信する広告が掲載されます。
+                この広告サービスでは、上述のCookieを利用することで、ユーザーが当サイト・アプリに訪れた情報や過去他のサイトに訪れた情報に基づき、適切な広告を表示します。
+                Cookieを利用した広告を無効にする方法についてはこちらの広告設定をご参照ください。
+                <h2>プライバシーポリシーの変更について</h2>
+                当サイト・アプリは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
+                修正された最新のプライバシーポリシーは常に本ページにて開示されます。
+                <h2>免責事項</h2>
+                当サイト・アプリのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
+                当サイト・アプリに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+            </div>
+        </section>
+    </article>
+    <footer>
+        &copy; UDONKONET
+    </footer>
 </body>
 
 </html>
