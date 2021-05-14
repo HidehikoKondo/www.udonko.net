@@ -2,10 +2,16 @@
 <html>
 
 <head>
+    <title>UDONKONET（ウドンコネット）</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta name="keywords"
         content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
     <meta name="description" content="UDONKONETは名古屋でプログラミング講師・動画教材・モバイルアプリ開発をやってます">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
     <!--OGP-->
     <meta property="og:title" content="UDONKONET（ウドンコネット）" />
     <meta property="og:site_name" content="UDONKONET（ウドンコネット）" />
@@ -14,10 +20,59 @@
     <meta property="og:url" content="https://www.udonko.net" />
     <meta property="og:image" content="https://www.udonko.net/images/ogp.png" />
 
-    <title>UDONKONET（ウドンコネット）</title>
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c541a8adc.js" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script>
+        var headline = [
+            "プログラミング講師、執筆、教材制作やってます",
+            "WEBアプリ、スマホアプリを開発しています",
+            "受賞歴やメディア出演など",
+            "お問い合わせはこちら",
+        ];
+
+        var mouseover = [
+            "プログラミング教室で講師やってます",
+            "プログラミング動画の配信やってます",
+            "UdemyでiOSアプリ開発入門動画を配信",
+            "ゲーム効果音の配信サイト -8bitSounds-",
+            "『SpriteKitではじめる2Dゲームプログラミング』執筆",
+            "『MaBeee活用ブック』作品掲載",
+            "GitHubで公開してます",
+            "Androidアプリを作ってます",
+            "iOSアプリを作ってます（現在非公開）",
+            "YouTubeチャンネルやってます",
+            "note書いてます",
+            "アプリがTV番組で紹介されました",
+            "ゲームプログラマーとしてラジオ番組にゲスト出演しました",
+            "SPAJAM2016予選優勝＆本選出場しました",
+            "Mabeee祭り2017に出場しました",
+            "Twitterはこちら",
+            "Facebookはこちら",
+            "メールフォームはこちら",
+            "Wantedlyで経歴を公開しています",
+            "プログラミングスクールの教材として作ったゲーム",
+            "",
+        ]
+
+        function defaultMessage() {
+            // console.log(document.getElementById("education"));
+            var element = document.getElementById("education").innerHTML = headline[0];
+            document.getElementById("development").innerHTML = headline[1];
+            document.getElementById("activity").innerHTML = headline[2];
+            document.getElementById("contact").innerHTML = headline[3];
+        }
+
+        function changeMessage(element, message) {
+            // console.log(element);
+            element.parentNode.childNodes[3].innerHTML = message;
+            element.parentNode.childNodes[3].animate([{ opacity: '0' }, { opacity: '1' }], 300);
+        }
+
+    </script>
 </head>
 
 <body>
@@ -25,8 +80,7 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
 
     <script>
@@ -46,170 +100,128 @@
         firebase.analytics();
     </script>
 
-    <div id="wrap">
-        <header>
-            <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
-        </header>
-        <div id="contents">
-            <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-mobileapps.svg" />
-                    <p>PWA、iOSアプリの開発をやっています</p>
-                </div>
-                <div class="works">
-                    <a href="https://itunes.apple.com/jp/app/id570377317" target="_blank"><img class="icon"
-                            src="images/icon-hageoyaji.svg" alt="ハゲ親父断髪式" /></a>
-                    <a href="https://www.udonko.net/rensha/" target="_blank"><img class="icon"
-                            src="images/icon-rensha.svg" alt="THE RENSHA 連射の名人" /></a>
-                    <a href="https://itunes.apple.com/jp/app/id1447619262" target="_blank"><img class="icon"
-                            src="images/icon-breakout.svg" alt="SpriteKitでブロック崩し" /></a>
-                    <a href="https://itunes.apple.com/jp/app/id1314890802" target="_blank"><img class="icon"
-                            src="images/icon-uranai.svg" alt="どうぶつ顔占い" /></a>
-                    <img class="icon" src="images/icon-blank.svg" />
-                    <!-- <a href="https://liberapp.net/applications/bfcf97c0-4d7b-11e9-a9ec-ddb13d192933/information"
-                        target="_blank"><img class="icon" src="images/icon-collision.svg" alt="The Collision" /></a> -->
-                </div>
-                <div class="works">
-                    <a href="pacmeme.html" target="_blank"><img class="icon" src="images/icon-pacmeme.svg" /></a>
+    <header>
+        <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
+    </header>
+    <article>
+        <section>
+            <h1>Programming Education</h1>
+            <p id="education"></p>
+            <a href="http://www.codefriends.jp/" onmouseover="changeMessage(this, mouseover[0]);"
+                onmouseout="changeMessage(this , headline[0])">
+                <i class="fas fa-chalkboard-teacher"></i></a>
+            <a href="https://www.youtube.com/channel/UCnR9CDKi67LjKccrin7S53w/featured"
+                onmouseover="changeMessage(this, mouseover[1]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.udemy.com/course/ios12-watchos5-spritekit/"
+                onmouseover="changeMessage(this, mouseover[2]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fas fa-video"></i></a>
+            <a href="https://www.shoeisha.co.jp/book/detail/9784798139517"
+                onmouseover="changeMessage(this, mouseover[4]);" onmouseout="changeMessage(this , headline[0])"><i
+                    class="fas fa-book"></i></a>
+            <a href="https://www.jam-house.co.jp/mabeee/index.htm" onmouseover="changeMessage(this, mouseover[5]);"
+                onmouseout="changeMessage(this , headline[0])"><i class="fas fa-book"></i></a>
+            <a href="https://www.udonko.net/rensha/" onmouseover="changeMessage(this, mouseover[19]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fas fa-gamepad"></i></a>
+            <a href="https://www.udonko.net/airhockey/" onmouseover="changeMessage(this, mouseover[19]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fas fa-gamepad"></i></a>
+        </section>
 
-                    <a href="https://itunes.apple.com/jp/app/id1013469638" target="_blank"><img class="icon"
-                            src="images/icon-morphincam.svg" alt="morphinecam" /></a>
-                    <a href="nigeyonkun.html" target="_blank"><img class="icon" src="images/icon-nigeyonkun.svg"
-                            alt="逃げる！目覚まし時計 --にげよんくん--" /></a>
+        <section>
+            <h1>Developement</h1>
+            <p id="development"></p>
+            <a href="https://github.com/HidehikoKondo" onmouseover="changeMessage(this, mouseover[6]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fab fa-github"></i></a>
+            <a href="https://play.google.com/store/apps/developer?id=UDONKONET
+" onmouseover="changeMessage(this, mouseover[7]);" onmouseout="changeMessage(this , headline[1])"><i
+                    class="fab fa-google-play"></i></a>
 
-                    <a href="https://itunes.apple.com/jp/app/id845795103" target="_blank"><img class="icon"
-                            src="images/icon-tax8.svg" alt="tax8%" /></a>
-
-                    <img class="icon" src="images/icon-blank.svg" />
-                </div>
+            <a href="https://apps.apple.com/jp/developer/hidehiko-kondo/id436143446?ign-mpt=uo%3D4
+" onmouseover="changeMessage(this, mouseover[8]);" onmouseout="changeMessage(this , headline[1])"><i
+                    class="fab fa-app-store"></i></a>
+            <a href="https://sounds.udonko.net/" onmouseover="changeMessage(this, mouseover[3]);"
+                onmouseout="changeMessage(this , headline[1])"><i class="fas fa-gamepad"></i></a>
+        </section>
+        <section>
+            <h1>Activity</h1>
+            <p id="activity"></p>
+            <a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i"
+                onmouseover="changeMessage(this, mouseover[9]);" onmouseout="changeMessage(this , headline[2])"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://note.com/tapioca24/n/nd0eb37a1ba83" onmouseover="changeMessage(this, mouseover[10]);"
+                onmouseout="changeMessage(this , headline[2])"><i class="far fa-file"></i></a>
+            <a href="https://www.aba-net.com/lucky/" onmouseover="changeMessage(this, mouseover[11]);"
+                onmouseout="changeMessage(this , headline[2])"><i class="fas fa-tv"></i></a>
+            <a href="https://zip-fm.co.jp/program/peeps/" onmouseover="changeMessage(this, mouseover[12]);"
+                onmouseout="changeMessage(this , headline[2])"><i class="fas fa-microphone-alt"></i></a>
+            <a href="https://spajam.jp/2016/final/team/" onmouseover="changeMessage(this, mouseover[13]);"
+                onmouseout="changeMessage(this , headline[2])"><i class="fas fa-trophy"></i></a>
+            <a href="http://www.mabeeematsuri-2017.com/" onmouseover="changeMessage(this, mouseover[14]);"
+                onmouseout="changeMessage(this , headline[2])"><i class="fas fa-trophy"></i></a>
+        </section>
+        <section>
+            <h1>Contact</h1>
+            <p id="contact"></p>
+            <a href="https://twitter.com/UDONKONET" onmouseover="changeMessage(this, mouseover[15]);"
+                onmouseout="changeMessage(this , headline[3])"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/udonkonet/" onmouseover="changeMessage(this, mouseover[16]);"
+                onmouseout="changeMessage(this , headline[3])"><i class="fab fa-facebook"></i></a>
+            <a href="https://forms.gle/5GNntSV6HeuFVPUg8" onmouseover="changeMessage(this, mouseover[17]);"
+                onmouseout="changeMessage(this , headline[3])"><i class="far fa-envelope"></i></a>
+            <a href="https://www.wantedly.com/id/hidehiko_kondo" onmouseover="changeMessage(this, mouseover[18]);"
+                onmouseout="changeMessage(this , headline[3])"><i class="far fa-handshake"></i></a>
+        </section>
+        <section>
+            <h1>About</h1>
+            <p id="about">UDONKONETについて</p>
+            <div class="about">
+                <li><b>屋号：</b>UDONKONET（ウドンコネット）</li>
+                <li><b>氏名：</b>近藤 秀彦</li>
+                <li><b>場所：</b>愛知県</li>
+                <li><b>事業：</b>プログラミング講師　アプリ開発</li>
             </div>
-            <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-education.svg" />
-                    <p>プログラミング講師・動画教材の制作をしています</p>
-                </div>
-                <div class="works">
-                    <a href="http://www.codefriends.jp/" target="_blank"><img class="icon"
-                            src="images/icon-codefriends.svg" alt="親子で学べる小学生からのプログラミングスクールCODEFRIENDS" /></a>
-                    <!-- <a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i" target="_blank"><img　class="icon" src="images/icon-youtube.svg" alt="UDONKONET出演動画" /></a> -->
-                    <a href="https://www.youtube.com/channel/UCnR9CDKi67LjKccrin7S53w/featured" target="_blank"><img
-                            class="icon" src="images/icon-youtube.svg" alt="CODEFRIENDS Youtubeチャンネル" /></a>
-                    <a href="https://www.udemy.com/ios12-watchos5-spritekit/" target="_blank"><img class="icon"
-                            src="images/icon-udemy.svg"
-                            alt="Udemyコース「【iOS12/watchOS5】UIKit・WatchKit・SpriteKitで作るカメラアプリ＆ゲームアプリ 入門編」" /></a>
-                    <a href="https://sounds.udonko.net" target="_blank" /><img class="icon"
-                        src="images/icon-8bitsounds.svg" alt="8BITSOUNDS 商用OK無料フリー効果音素材" /></a>
-                    <img class="icon" src="images/icon-blank.svg" />
-                </div>
+        </section>
+        <section>
+            <h1>Privacy Policy</h1>
+            <p>プライバシーポリシーです</p>
+            <div class="privacy">
+                <h2>個人情報の利用目的</h2>
+                当サイト・アプリでは、メールでのお問い合わせなどの際に、名前、メールアドレス等の個人情報をご登録いただく場合がございます。
+                これらの個人情報はお問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
+                <h2>個人情報の第三者への開示</h2>
+                当サイト・アプリでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。<br />
+                ・本人のご了解がある場合<br />
+                ・法令等への協力のため、開示が必要となる場合<br />
+                <h2>個人情報の開示、訂正、追加、削除、利用停止</h2>
+                ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
+                <h2>クッキー（Cookie）</h2>
+                当サイト・アプリでは、一部のコンテンツについてCookie（クッキー）を利用しています。
+                Cookieとは、サイトにアクセスした際にブラウザに保存される情報ですが、お名前やメールアドレス等の個人情報は含まれません。
+                当サイト・アプリにアクセスいただいた方々に効果的な広告を配信するためやアクセス解析にCookieの情報を利用させていただく場合があります。
+                ブラウザの設定により、Cookieを使用しないようにすることも可能です。
+                当サイト・アプリで利用しているアクセス解析、広告サービスは以下のとおりです。<br />
+                ・Google Analytics<br />
+                ・Admob<br />
+                ・Firebase
+                <h2>第三者配信の広告サービスとCookie</h2>
+                当サイト・アプリでは、第三者配信の広告サービスである「Admob」を利用し、第三者配信事業者や広告ネットワークの配信する広告が掲載されます。
+                この広告サービスでは、上述のCookieを利用することで、ユーザーが当サイト・アプリに訪れた情報や過去他のサイトに訪れた情報に基づき、適切な広告を表示します。
+                Cookieを利用した広告を無効にする方法についてはこちらの広告設定をご参照ください。
+                <h2>プライバシーポリシーの変更について</h2>
+                当サイト・アプリは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
+                修正された最新のプライバシーポリシーは常に本ページにて開示されます。
+                <h2>免責事項</h2>
+                当サイト・アプリのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
+                当サイト・アプリに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
             </div>
-            <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-activity.svg" />
-                    <p>執筆、ハッカソン出場、メディア出演などなど</p>
-                </div>
-                <div class="works">
-                    <a href="http://www.shoeisha.co.jp/book/detail/9784798139517" target="_blank"><img class="icon"
-                            src="images/icon-spritekit.svg" alt="SpriteKitではじめる2Dゲームプログラミング Swift対応" /></a>
-                    <a href="http://www.jam-house.co.jp/mabeee/index.htm" target="_blank"><img class="icon"
-                            src="images/icon-mabeeebook.svg" alt="スマホでおもちゃを動かしちゃおう！MaBeee活用ブック" /></a>
-                    <a href="http://www.mabeeematsuri-2017.com" target="_blank"><img class="icon"
-                            src="images/icon-mabeeematsuri.svg" alt="MaBeee祭" /></a>
-                    <a href="http://zip-fm.co.jp/program/peeps/" target="_blank"><img class="icon"
-                            src="images/icon-peeps.svg" alt="ZIP-FM PEEPS" /></a>
-                    <a href="http://www.aba-net.com/cgi-bin/luckyblog/blog.cgi?n=69&mode=archive&month=201608"
-                        target="_blank"><img class="icon" src="images/iconn-lucky.svg" alt="夢はここから深夜放送ラッキー" /></a>
-                </div>
-                <div class="works">
-                    <a href="https://note.mu/udonkonet" target="_blank"><img class="icon" src="images/icon-note.svg"
-                            alt="UDONKONETのnote" /></a>
-                    <a href="https://www.youtube.com/playlist?list=PLVXuOZe0dM3QvNt9B2rZzD69s7C1XbZ1i"
-                        target="_blank"><img class="icon" src="images/icon-youtube.svg" alt="UDONKONET出演動画" /></a>
-                    <a href="https://spajam.jp" target="_blank"><img class="icon" src="images/icon-spajam.svg"
-                            alt="SPAJAM" /></a>
-                    <img class="icon" src="images/icon-blank.svg" />
-                    <img class="icon" src="images/icon-blank.svg" />
-                </div>
-            </div>
-            <!-- <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-contact.svg" />
-                    <p>お問い合わせは各種SNS・メールでどうぞ</p>
-                </div>
-                <div class="works">
-                    <a href="https://www.facebook.com/udonkonet" target="_blank"><img class="icon"
-                            src="images/icon-facebook.svg" alt="UDONKONET FACEBOOK" /></a>
-                    <a href="https://www.facebook.com/udonkoapps" target="_blank"><img class="icon"
-                            src="images/icon-facebookpage.svg" alt="UDONKONET FACEBOOKPAGE" /></a>
-                    <a href="https://twitter.com/UDONKONET" target="_blank"><img class="icon"
-                            src="images/icon-twitter.svg" alt="UDONKONET TWITTER" /></a>
-                    <a href="https://www.wantedly.com/users/2372608" target="_blank"><img class="icon"
-                            src="images/icon-wantedly.svg" /></a>
-                    <a href="https://forms.gle/5GNntSV6HeuFVPUg8" target="_blank"><img class="icon"
-                            src="images/icon-mail.svg" /></a>
-                </div>
-            </div> -->
-            <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-about.svg" />
-                </div>
-                <table id="about">
-                    <tr>
-                        <th>屋　号</th>
-                        <td>UDONKONET（ウドンコネット）</td>
-                    </tr>
-                    <tr>
-                        <th>氏　名</th>
-                        <td>近藤 秀彦</td>
-                    </tr>
-                    <tr>
-                        <th>活動エリア</th>
-                        <td>主に愛知県・岐阜県、たまに東京</td>
-                    </tr>
-                    <tr>
-                        <th>事業内容</th>
-                        <td>プログラミング講師・アプリ開発・WEB制作</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="box">
-                <div class="headline">
-                    <img class="headline" src="images/headline-privacy.svg" />
-                    <p>UDONKONETのWEBサイト・アプリのプライバシーポリシーです</p>
-                </div>
-                <div class="privacy">
-                    <h1>個人情報の利用目的</h1>
-                    当サイト・アプリでは、メールでのお問い合わせなどの際に、名前、メールアドレス等の個人情報をご登録いただく場合がございます。
-                    これらの個人情報はお問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
-                    <h1>個人情報の第三者への開示</h1>
-                    当サイト・アプリでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。<br />
-                    ・本人のご了解がある場合<br />
-                    ・法令等への協力のため、開示が必要となる場合<br />
-                    <h1>個人情報の開示、訂正、追加、削除、利用停止</h1>
-                    ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
-                    <h1>クッキー（Cookie）</h1>
-                    当サイト・アプリでは、一部のコンテンツについてCookie（クッキー）を利用しています。
-                    Cookieとは、サイトにアクセスした際にブラウザに保存される情報ですが、お名前やメールアドレス等の個人情報は含まれません。
-                    当サイト・アプリにアクセスいただいた方々に効果的な広告を配信するためやアクセス解析にCookieの情報を利用させていただく場合があります。
-                    ブラウザの設定により、Cookieを使用しないようにすることも可能です。
-                    当サイト・アプリで利用しているアクセス解析、広告サービスは以下のとおりです。<br />
-                    ・Google Analytics<br />
-                    ・Admob<br />
-                    ・Firebase
-                    <h1>第三者配信の広告サービスとCookie</h1>
-                    当サイト・アプリでは、第三者配信の広告サービスである「Admob」を利用し、第三者配信事業者や広告ネットワークの配信する広告が掲載されます。
-                    この広告サービスでは、上述のCookieを利用することで、ユーザーが当サイト・アプリに訪れた情報や過去他のサイトに訪れた情報に基づき、適切な広告を表示します。
-                    Cookieを利用した広告を無効にする方法についてはこちらの広告設定をご参照ください。
-                    <h1>プライバシーポリシーの変更について</h1>
-                    当サイト・アプリは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
-                    修正された最新のプライバシーポリシーは常に本ページにて開示されます。
-                    <h1>免責事項</h1>
-                    当サイト・アプリのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
-                    当サイト・アプリに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
-                </div>
-            </div>
-            <span id="copyright">&copy; UDONKONET</span>
-        </div>
-    </div>
+        </section>
+    </article>
+    <footer>
+        &copy; UDONKONET
+    </footer>
 </body>
 
 </html>
+<script>
+    defaultMessage();
+</script>
