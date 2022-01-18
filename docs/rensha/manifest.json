@@ -1,0 +1,25 @@
+{
+    "name": "THE RENSHA =Master of SUIKA-WARI=",
+    "short_name": "THE RENSHA",
+    "icons": [
+        {
+            "src": "images/icon256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait",
+    "start_url": "/rensha/",
+    "display": "fullscreen",
+    "theme_color": "#ffffff"
+}
