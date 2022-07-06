@@ -36,10 +36,11 @@ p {
 }
 
 i {
-    text-align: left;
-    width: 64px;
+    text-align: center;
+    width: 50px;
     height: 44px;
     font-size: 40px;
+    margin: 20px 15px 20px 0;
 }
 
 header {
