@@ -36,11 +36,8 @@ p {
 }
 
 i {
-    text-align: center;
-    width: 50px;
-    height: 44px;
     font-size: 40px;
-    margin: 20px 15px 20px 0;
+    margin: 20px 15px 20px -20px;
 }
 
 header {
