@@ -14,7 +14,8 @@ body {
 }
 
 h1 {
-    font-family: "Anton", sans-serif;
+    /* font-family: "Anton", sans-serif; */
+    font-family: "Noto Sans JP", sans-serif;
     border-bottom-width: 2px;
     border-bottom-color: #000000;
     border-bottom-style: solid;
