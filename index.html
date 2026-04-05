@@ -10,7 +10,6 @@
     content="iOS,スマホ,モバイル,名古屋,WEB,WEB制作,アプリ開発,Android,ウェアラブルデバイス,JINS MEME,MaBeee,プログラミング講師,インストラクター,講師">
   <meta name="description" content="UDONKONETは名古屋でプログラミング講師・教材制作・モバイルアプリ開発をやってます">
   <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css">
 
   <!--OGP-->
   <meta property="og:title" content="UDONKONET（ウドンコネット）" />
@@ -20,161 +19,24 @@
   <meta property="og:url" content="https://www.udonko.net" />
   <meta property="og:image" content="https://www.udonko.net/images/ogp.png" />
 
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3c541a8adc.js" crossorigin="anonymous"></script>
-
-  <!-- js -->
-  <script>
-    // var headline = [
-    //   "EdTechの分野で活動をしています",
-    //   "WEBアプリ、スマホアプリを開発しています",
-    //   "その他の活動、受賞歴やメディア出演など",
-    //   "お問い合わせはこちら",
-    //   "プログラミング教材の執筆をしています",
-    // ];
-
-    // var mouseover = [
-    //   "プログラミング教室『CODEFRIENDS』で講師やってます",
-    //   "『CODEFRIENDS』のYouTubeチャンネルです",
-    //   "UdemyでiOSアプリ開発入門動画を配信してます",
-    //   "ゲーム効果音の配信サイト -8bitSounds-",
-    //   "『SpriteKitではじめる2Dゲームプログラミング Swift対応』の書籍を執筆しました",
-    //   "『MaBeee活用ブック』にiOSアプリ『にげよんくん』が掲載されました",
-    //   "GitHubでいろいろ公開してます",
-    //   "Androidアプリを作ってます",
-    //   "iOSアプリを作ってました（現在非公開）",
-    //   "YouTubeチャンネルでプログラミング関連動画の配信やってます",
-    //   "Zennでテック記事書いてます",
-    //   "iOSアプリ『ハゲ親父断髪式』がTV番組のクイズコーナーで問題として出題されました",
-    //   "ゲームプログラマーとしてラジオ番組にゲスト出演しました",
-    //   "SPAJAM2016東海地区予選優勝＆本選出場、2017と2018は優秀賞獲得",
-    //   "Mabeee祭り2017に出場しました",
-    //   "Twitterはこちら",
-    //   "Facebookはこちら",
-    //   "お問い合わせフォームはこちら",
-    //   "LinkedInで経歴を公開しています",
-    //   "プログラミングスクールの教材として作ったゲームの紹介です",
-    //   "『家計簿アプリを作りながら学ぶJavaScript』をTechpitにて執筆＆配信しました",
-    //   "Chrome拡張機能を作りました",
-    //   "UDONKONETのYouTubeチャンネルです"
-    // ]
-
-    // function defaultMessage() {
-    //   // console.log(document.getElementById("education"));
-    //   var element = document.getElementById("education").innerHTML = headline[0];
-    //   document.getElementById("development").innerHTML = headline[1];
-    //   document.getElementById("activity").innerHTML = headline[2];
-    //   document.getElementById("contact").innerHTML = headline[3];
-    //   document.getElementById("writing").innerHTML = headline[4];
-
-    // }
-
-    // function changeMessage(element, message) {
-    //   // console.log(element);
-    //   element.parentNode.childNodes[3].innerHTML = message;
-    //   element.parentNode.childNodes[3].animate([{ opacity: '0' }, { opacity: '1' }], 300);
-    // }
-
-  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "Noto Sans JP", sans-serif; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+  <main id="content"></main>
 
-  <header>
-    <img id="titleimg" src="images/title.svg" usemap="#ImageMap" />
-  </header>
-  <article>
-    <section>
-      <h1>プロフィール</h1>
-      <p id="about" class="description">UDONKONETのプロフィールです</p>
-      <div class="about">
-        <b>氏名：</b>近藤 秀彦<br>
-        <b>職業：</b>個人事業主（適格請求書発行事業者）<br>
-        <b>屋号：</b>UDONKONET（ウドンコネット）<br>
-        <b>分野：</b>EdTech / プログラミング教育<br>
-        <b>事業：</b>テクニカルライター / インストラクター / エンジニア<br>
-        <b>場所：</b>愛知県
-      </div>
-    </section>
-    <section>
-      <h1>テクニカルライティング</h1>
-      <p id="writing" class="description">これまでに制作した教材や著書はこちら</p>
-      <ul>
-        <li>
-          <a href="https://www.techpit.jp/courses/169">家計簿アプリを作りながら学ぶJavaScript！
-            （Techpit）</a>
-        </li>
-        <li>
-          <a href="https://www.shoeisha.co.jp/book/detail/9784798139517">SpriteKitではじめる2Dゲームプログラミング Swift対応
-            （翔泳社）</a>
-        </li>
-        <li>
-          <a href="https://www.jam-house.co.jp/mabeee/index.htm">スマホでおもちゃを動かしちゃおう！
-            MaBeee活用ブック（Jam House）</a>
-        </li>
-        <li>
-          <a href="https://www.udemy.com/course/ios12-watchos5-spritekit/">UIKit・WatchKit・SpriteKitで作るカメラアプリ＆ゲームアプリ入門編
-            （Udemy）</a>
-        </li>
-        <li>
-          <a href="https://zenn.dev/udonkonet">Zennの投稿記事</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h1>ポートフォリオ</h1>
-      <p id="portfolio" class="description">経歴やポートフォリオはLinkedinからご覧ください</p>
-
-      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-      <div class="badge-base LI-profile-badge" data-locale="ja_JP" data-size="medium" data-theme="light"
-        data-type="VERTICAL" data-vanity="udonkonet" data-version="v1"></div>
-    </section>
-    <section>
-      <h1>お問い合わせ</h1>
-      <p id="contact" class="description">お問い合わせはこちらからどうぞ</p>
-      <a href="https://forms.gle/5GNntSV6HeuFVPUg8"><i class="far fa-envelope fa-fw"></i></a>
-      <a href="https://www.facebook.com/udonkonet/"><i class="fab fa-facebook fa-fw"></i></a>
-      <a href="https://www.linkedin.com/in/udonkonet/"><i class="fab fa-linkedin-in fa-fw"></i></a>
-    </section>
-    <section>
-      <h1>プライバシーポリシー</h1>
-      <p class="description">プライバシーポリシーです</p>
-      <div class="privacy">
-        <h2>個人情報の利用目的</h2>
-        当サイト・アプリでは、メールでのお問い合わせなどの際に、名前、メールアドレス等の個人情報をご登録いただく場合がございます。
-        これらの個人情報はお問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
-        <h2>個人情報の第三者への開示</h2>
-        当サイト・アプリでは、個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。<br />
-        ・本人のご了解がある場合<br />
-        ・法令等への協力のため、開示が必要となる場合<br />
-        <h2>個人情報の開示、訂正、追加、削除、利用停止</h2>
-        ご本人からの個人データの開示、訂正、追加、削除、利用停止のご希望の場合には、ご本人であることを確認させていただいた上、速やかに対応させていただきます。
-        <h2>クッキー（Cookie）</h2>
-        当サイト・アプリでは、一部のコンテンツについてCookie（クッキー）を利用しています。
-        Cookieとは、サイトにアクセスした際にブラウザに保存される情報ですが、お名前やメールアドレス等の個人情報は含まれません。
-        当サイト・アプリにアクセスいただいた方々に効果的な広告を配信するためやアクセス解析にCookieの情報を利用させていただく場合があります。
-        ブラウザの設定により、Cookieを使用しないようにすることも可能です。
-        当サイト・アプリで利用しているアクセス解析、広告サービスは以下のとおりです。<br />
-        ・Google Analytics<br />
-        ・Adsense
-        <h2>第三者配信の広告サービスとCookie</h2>
-        当サイト・アプリでは、第三者配信の広告サービスである「Admob」を利用し、第三者配信事業者や広告ネットワークの配信する広告が掲載されます。
-        この広告サービスでは、上述のCookieを利用することで、ユーザーが当サイト・アプリに訪れた情報や過去他のサイトに訪れた情報に基づき、適切な広告を表示します。
-        Cookieを利用した広告を無効にする方法についてはこちらの広告設定をご参照ください。
-        <h2>プライバシーポリシーの変更について</h2>
-        当サイト・アプリは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
-        修正された最新のプライバシーポリシーは常に本ページにて開示されます。
-        <h2>免責事項</h2>
-        当サイト・アプリのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
-        当サイト・アプリに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
-      </div>
-    </section>
-  </article>
-  <footer>
-    &copy; UDONKONET
-  </footer>
+  <script>
+    fetch('content.md')
+      .then(function(res) { return res.text(); })
+      .then(function(text) {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      });
+  </script>
 </body>
 
 </html>
