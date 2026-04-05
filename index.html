@@ -22,10 +22,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <style>
-    body { font-family: "Noto Sans JP", sans-serif; background-color: #ff0000; }
-    main { background-color: #ffffff; padding: 20px; }
-    main img { display: block; margin: 0 auto; }
-    pre { white-space: pre-wrap; }
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background-color: #ff0000;
+    }
+
+    main {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    main img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    pre {
+      white-space: pre-wrap;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -34,9 +48,9 @@
   <main id="content"></main>
 
   <script>
-    fetch('content.md')
-      .then(function(res) { return res.text(); })
-      .then(function(text) {
+    fetch('index.md')
+      .then(function (res) { return res.text(); })
+      .then(function (text) {
         document.getElementById('content').innerHTML = marked.parse(text);
       });
   </script>
