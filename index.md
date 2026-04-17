@@ -1,4 +1,4 @@
-![UDONKONET](images/title.svg)
+![UDONKONET - 名古屋のプログラミング講師・教材制作・モバイルアプリ開発](images/title.svg)
 
 ## プロフィール
 
