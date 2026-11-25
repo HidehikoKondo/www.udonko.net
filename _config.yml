@@ -1,0 +1,12 @@
+title: UDONKONET
+description: IT講師、教材執筆、コンテンツ制作、アプリ開発などをやってます
+url: https://www.udonko.net
+lang: ja
+theme: jekyll-theme-primer
+
+exclude:
+  - CLAUDE.md
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
