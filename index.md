@@ -18,7 +18,7 @@
 ## テクニカルライティング
 これまでに執筆した著書など
 
-- [家計簿アプリを作りながら学ぶJavaScript！（Techpit）](https://www.techpit.jp/courses/169)
+- [家計簿アプリを作りながら学ぶJavaScript！（Techpit）](https://techpit.intloop.com/courses/169)
 - [SpriteKitではじめる2Dゲームプログラミング Swift対応（翔泳社）](https://www.shoeisha.co.jp/book/detail/9784798139517)
 - [スマホでおもちゃを動かしちゃおう！ MaBeee活用ブック（Jam House）](https://www.jam-house.co.jp/mabeee/index.htm)
 - [UIKit・WatchKit・SpriteKitで作るカメラアプリ＆ゲームアプリ入門編（Udemy）](https://www.udemy.com/course/ios12-watchos5-spritekit/)
